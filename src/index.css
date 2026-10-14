@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Paleta extraída do logotipo da Beto Bikes */
+@theme {
+  --color-carvao: #0C1014;   /* fundo do emblema */
+  --color-branco: #F2F3F7;   /* aro branco */
+  --color-azul: #1C1980;     /* corrente e letra B */
+  --color-azul-claro: #5B58E0; /* azul legível sobre fundo escuro (texto/ícones) */
+  --color-vermelho: #D52223; /* letras BETO BIKES */
+  --font-display: "Barlow Condensed", sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-tech: "Barlow", sans-serif;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
+body { background: var(--color-carvao); color: var(--color-branco); font-family: var(--font-sans); }
+:focus-visible { outline: 2px solid var(--color-vermelho); outline-offset: 3px; }
+.glass { background: rgb(12 16 20 / .65); backdrop-filter: blur(14px); border: 1px solid rgb(242 243 247 / .12); }
+
+/* FAQ: seta gira ao abrir */
+details > summary { list-style: none; cursor: pointer; }
+details > summary::-webkit-details-marker { display: none; }
+details[open] .faq-icon { transform: rotate(45deg); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+}

@@ -1,0 +1,28 @@
+{
+  "aviso": "EDITE ESTE ARQUIVO para mudar a loja. Cada produto fica entre chaves { }, separado por vírgula. Veja EDITAR-PRODUTOS.md. Os itens abaixo são EXEMPLOS.",
+  "produtos": [
+    {
+      "id": "exemplo-1",
+      "nome": "Bicicleta MTB aro 29 (exemplo)",
+      "categoria": "Bicicletas",
+      "preco": null,
+      "disponivel": true,
+      "descricao": "Troque este item por um produto real."
+    },
+    {
+      "id": "exemplo-2",
+      "nome": "Capacete de ciclismo (exemplo)",
+      "categoria": "Acessórios",
+      "preco": 199.9,
+      "precoAnterior": 249.9,
+      "disponivel": true
+    },
+    {
+      "id": "exemplo-3",
+      "nome": "Câmara de ar aro 29 (exemplo)",
+      "categoria": "Peças",
+      "preco": 39.9,
+      "disponivel": false
+    }
+  ]
+}
